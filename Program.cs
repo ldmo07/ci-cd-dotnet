@@ -22,3 +22,4 @@ app.MapGet("/personas", () => personas);
 app.Run();
 
 record Product(int Id, string Name, decimal Price);
+record Persona(string Id, string Nombre, string Apellido, int Edad);
