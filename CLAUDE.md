@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Repo independiente (remoto `github.com/ldmo07/-ci-cd-dotnet`, con guion inicial), clonado dentro de `CI-CD/` pero ignorado por el repo raíz. Se commitea y pushea desde esta carpeta.
+Repo independiente (`github.com/ldmo07/ci-cd-dotnet`), clonado dentro de `CI-CD/` pero ignorado por el repo raíz. Se commitea y pushea desde esta carpeta.
 
 - App: minimal API en `Program.cs` (rutas `/`, `/products`, `/personas`), proyecto `example.csproj` (net8.0). No hay tests; la verificación es `docker build` + `curl`.
 - CORS está habilitado a propósito: `ci-cd-react` (`:8084`) llama a `/personas` desde el navegador. No quitarlo sin ajustar el front.
