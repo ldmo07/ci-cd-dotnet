@@ -25,3 +25,5 @@ app.Run();
 
 record Product(int Id, string Name, decimal Price);
 record Persona(string Id, string Nombre, string Apellido, int Edad);
+
+public partial class Program { }

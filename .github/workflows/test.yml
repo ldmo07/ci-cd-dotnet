@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - run: dotnet restore
+      - run: dotnet restore tests/Api.Tests
       - run: dotnet format --verify-no-changes
-      - run: dotnet build --no-restore -warnaserror
-      - run: dotnet test --no-build
+      - run: dotnet build tests/Api.Tests --no-restore -warnaserror
+      - run: dotnet test tests/Api.Tests --no-build
